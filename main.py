@@ -19,11 +19,11 @@ start_message = """
 
 about_message = """
 <b>• Name : <a href=https://t.me/ajeet_bots> Auto Caption</a></b>
-<b>• Developer : <a href=https://t.me/Ajeet_bots>[UPDATES]</a></b>
+<b>• Developer : <a href=https://t.me/me_miss_you>[𓆩〭⃛〬𓆩〭⃛〬➤⃝✖‿✖•Ajͥeeͣtͫ]</a></b>
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
 <b>• Updates : <a href=https://t.me/ajeet_bots>Click Here</a></b>
-<b>• Source Code : <a href=https://github.com/VJBots/VJ-AutoCaption-Bot>Click Here</a></b>"""
+<b>• Source Code : <a href=https://t.me/ajmoviegroup>Click Here</a></b>"""
 
 @AutoCaptionBotV1.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
 def start_command(bot, update):
@@ -71,10 +71,10 @@ def get_file_details(update: pyrogram.types.Message):
 def start_buttons(bot, update):
     bot = bot.get_me()
     buttons = [[
-        pyrogram.types.InlineKeyboardButton("Updates", url="t.me/VJ_Botz"),
+        pyrogram.types.InlineKeyboardButton("Updates", url="t.me/ajeet_bots"),
         pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
     ],[
-        pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/{bot.username}?startchannel=true")
+        pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/AutoXcaptionbot?startchannel=true")
     ]]
     return pyrogram.types.InlineKeyboardMarkup(buttons)
 

@@ -4,10 +4,10 @@
 
 import pyrogram, os, asyncio
 
-app_id = int(os.environ.get("app_id", ""))
-api_hash = os.environ.get("api_hash", "")
+app_id = int(os.environ.get("app_id", "24005775"))
+api_hash = os.environ.get("api_hash", "e2593d8b0f5f52798926619defc21905")
 bot_token = os.environ.get("bot_token", "")
-custom_caption = os.environ.get("custom_caption", "`{file_name}`\n\n**Powered By - @VJ_Botz**") # Here You Can Give Anything, if You Want Real File Name Then Use {file_name}
+custom_caption = os.environ.get("custom_caption", "`{file_name}`\n\n**Powered By - @Ajeet_bots**") # Here You Can Give Anything, if You Want Real File Name Then Use {file_name}
 
 AutoCaptionBotV1 = pyrogram.Client(name="AutoCaptionBotV1", api_id=app_id, api_hash=api_hash, bot_token=bot_token)
 
@@ -15,14 +15,14 @@ start_message = """
 <b>👋Hello {}</b>
 <b>I am an AutoCaption bot</b>
 <b>All you have to do is to add me to your channel as admin and I will show you my power</b>
-<b>@VJ_Botz</b>"""
+<b>@Ajeet_bots</b>"""
 
 about_message = """
-<b>• Name : <a href=https://t.me/VJ_Botz>VJ AutoCaption</a></b>
-<b>• Developer : <a href=https://t.me/VJ_Botz>[VJ UPDATES]</a></b>
+<b>• Name : <a href=https://t.me/ajeet_bots> Auto Caption</a></b>
+<b>• Developer : <a href=https://t.me/Ajeet_bots>[UPDATES]</a></b>
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/VJ_Botz>Click Here</a></b>
+<b>• Updates : <a href=https://t.me/ajeet_bots>Click Here</a></b>
 <b>• Source Code : <a href=https://github.com/VJBots/VJ-AutoCaption-Bot>Click Here</a></b>"""
 
 @AutoCaptionBotV1.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))

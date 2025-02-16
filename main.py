@@ -71,10 +71,10 @@ def get_file_details(update: pyrogram.types.Message):
 def start_buttons(bot, update):
     bot = bot.get_me()
     buttons = [[
-        pyrogram.types.InlineKeyboardButton("Updates", url="t.me/ajeet_bots"),
+        pyrogram.types.InlineKeyboardButton("Updates", url="https://t.me/ajeet_bots"),
         pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
     ],[
-        pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/AutoXcaptionbot?startchannel=true")
+        pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"https://t.me/AutoXcaptionbot?startchannel=true")
     ]]
     return pyrogram.types.InlineKeyboardMarkup(buttons)
 
